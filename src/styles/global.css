@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -13,7 +14,7 @@ html, body {
 }
 
 body {
-  background: radial-gradient(at top left, rgb(255, 171, 55) 0%, rgba(43,9,107,1) 100%);
+  background: rgb(81, 81, 81);
   background-repeat: no-repeat;
 }
 
@@ -24,17 +25,31 @@ p {
 
 /* layout & nav */
 .layout {
-  max-width: 1200px;
+  
   margin: 0 auto;
 }
 
 nav {
+  font-family: 'Teko', sans-serif;  
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(0, 0, 0);
   height: 60px;
 }
+
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  padding: 150px;
+}
+
+nav .logo img {
+  height: 55px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add spacing between logo and other elements */
+}
+
 nav .main-links > li {
   margin-right: 20px; /* Adjust the margin-right value to adjust spacing */
 }
@@ -50,16 +65,15 @@ nav .links > a {
 
 nav .dropdown {
   position: relative;
+  font-family: 'Teko', sans-serif;
+  color: black;
 }
 nav .dropdown ul {
-  nav .dropdown ul {
     position: absolute;
     right: 0;
     background: rgb(0, 0, 0);
     display: none;
   }
-  
-}
 
 nav .dropdown:hover ul {
   display: block;
@@ -76,7 +90,8 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+
 }
 
 ul li ul {
@@ -86,18 +101,19 @@ ul li ul {
   padding-left: 0;
   left: 0;
   display: none;
-  background: rgb(0, 0, 0);
 }
 
+/*Modifies the drop down appearance*/
 ul li:hover > ul,
 ul li ul:hover {
+  list-style: none;
   visibility: visible;
   opacity: 1;
   display: block;
   text-align: right;
   top: 60px; /* Adjust this value to position the dropdown below the navigation bar */
-  padding-top: 20px;
-  box-shadow: 0px 3px 5px -1px #000000;
+  background-color: rgb(139, 135, 135);
+  width: 250px;
 
 }
 
@@ -111,7 +127,7 @@ ul li ul li {
 
 ul li ul li a:hover {
   padding-left: 10px;
-  border-left: 2px solid #3ca0e7;
+  border-left: 2px solid #3ca0e700;
   transition: all 0.3s ease;
 }
 
@@ -124,7 +140,7 @@ footer p {
   color: #bbb;
   position: fixed;
   bottom: 0;
-  width: 80%;
+  width: 100%;
 }
 
 a {

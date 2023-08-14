@@ -9,4 +9,9 @@
  */
 module.exports = {
   plugins: [],
+  siteMetadata: {
+    title: 'JB Coatings',
+    description: 'Detroit based powdercoating service',
+    copyright: 'Copyright JSB 2023'
+  }
 }
