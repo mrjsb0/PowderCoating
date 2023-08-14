@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: white;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(at top left, rgb(255, 171, 55) 0%, rgba(43,9,107,1) 100%);
+  background-repeat: no-repeat;
+}
+
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+
+/* layout & nav */
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 60px;
+}
+nav .main-links > li {
+  margin-right: 20px; /* Adjust the margin-right value to adjust spacing */
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+}
+
+nav .links > a {
+  margin-right: 20px;
+}
+
+nav .dropdown {
+  position: relative;
+}
+nav .dropdown ul {
+  nav .dropdown ul {
+    position: absolute;
+    right: 0;
+    background: rgb(0, 0, 0);
+    display: none;
+  }
+  
+}
+
+nav .dropdown:hover ul {
+  display: block;
+}
+
+nav .dropdown ul li {
+  margin: 0;
+}
+
+nav a {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: rgb(0, 0, 0);
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  text-align: right;
+  top: 60px; /* Adjust this value to position the dropdown below the navigation bar */
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #000000;
+
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0; /* Adjusted to keep the dropdown items closer */
+  border-style: none;
+}
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+footer p {
+  text-align: center;
+  color: #bbb;
+  position: fixed;
+  bottom: 0;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: #3CA0E7;
+  }
+}
