@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Add a class to the parent <ul> element */}
         <ul className="main-links">
           <li>
-            <a href="#">Services</a>  {/*This causes the warning upon compilation*/}
+            <a href="#">Services</a> 
             <ul className="dropdown"> 
         <li><a href='/offered-services/allServices/'>All services</a></li>
         <li><a href='/offered-services/mediaBlasting/'>Media Blasting</a></li>

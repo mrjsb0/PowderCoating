@@ -20,7 +20,8 @@
     "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23"
   },
   "repository": {
     "type": "git",

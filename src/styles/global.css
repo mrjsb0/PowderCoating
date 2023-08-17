@@ -7,6 +7,7 @@
   text-decoration: none;
   font-family: "Montserrat";
   color: white;
+  list-style-type: none;
 }
 
 html, body {
@@ -14,12 +15,12 @@ html, body {
 }
 
 body {
-  background: rgb(81, 81, 81);
+  background: rgb(57, 56, 56);
   background-repeat: no-repeat;
 }
 
-p {
-  margin: 16px auto;
+  p {
+    margin: 16px auto;
   line-height: 1.5em;
 }
 
@@ -51,9 +52,11 @@ nav .logo img {
 }
 
 nav .main-links > li {
-  margin-right: 20px; /* Adjust the margin-right value to adjust spacing */
+  margin-right: -30px; /* Adjust the margin-right value to adjust spacing */
 }
-
+li {
+  padding-right: 50px;
+}
 nav .links {
   display: flex;
   align-items: center;
@@ -61,36 +64,38 @@ nav .links {
 
 nav .links > a {
   margin-right: 20px;
+  
 }
 
 nav .dropdown {
   position: relative;
   font-family: 'Teko', sans-serif;
-  color: black;
 }
 nav .dropdown ul {
     position: absolute;
     right: 0;
-    background: rgb(0, 0, 0);
+    background: rgb(255, 244, 244);
     display: none;
   }
 
 nav .dropdown:hover ul {
   display: block;
+  
 }
 
 nav .dropdown ul li {
   margin: 0;
 }
 
+/*Nav text */
 nav a {
   font-weight: 400;
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 nav a:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid rgb(255, 0, 0);
 
 }
 
@@ -113,8 +118,8 @@ ul li ul:hover {
   text-align: right;
   top: 60px; /* Adjust this value to position the dropdown below the navigation bar */
   background-color: rgb(139, 135, 135);
-  width: 250px;
-
+  width: auto;
+  z-index: 1000;
 }
 
 ul li ul li {
@@ -126,8 +131,6 @@ ul li ul li {
 }
 
 ul li ul li a:hover {
-  padding-left: 10px;
-  border-left: 2px solid #3ca0e700;
   transition: all 0.3s ease;
 }
 
