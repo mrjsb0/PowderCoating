@@ -15,7 +15,7 @@ export default function Home({ data }) {
         <Carousel autoPlay showThumbs={false} />
       </div>
       <div className="content-container">
-        <h3>At JB Coatings, we take immense pride...</h3>
+        <h3 style={{ color: 'black' }}>At JB Coatings, we take immense pride...</h3>
       </div>
     </Layout>
   );

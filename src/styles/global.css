@@ -6,8 +6,13 @@
   padding: 0;
   text-decoration: none;
   font-family: "Montserrat";
-  color: white;
+  color: rgb(255, 255, 255);
   list-style-type: none;
+}
+
+a, .navbar .dropdown-menu li:hover > a, .navbar .dropdown-menu li:focus > a, .navbar .dropdown-menu li:active > a, .navbar .navbar-nav > li .dropdown-menu li:hover > a, body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a, body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:hover, body:not(.home) .navbar-default .navbar-nav > .active:not(.btn) > a:focus, a:hover, .card-blog a.moretag:hover, .card-blog a.more-link:hover, .widget a:hover, .has-text-color.has-accent-color, p.has-text-color a {
+  color: inherit !important;
+font-weight: bold;
 }
 
 html, body {
@@ -15,7 +20,7 @@ html, body {
 }
 
 body {
-  background: rgb(57, 56, 56);
+  background: rgb(255, 255, 255);
   background-repeat: no-repeat;
 }
 
@@ -84,7 +89,7 @@ nav .dropdown:hover ul {
 }
 
 nav .dropdown ul li {
-  margin: 0;
+  margin-top: 20px;
 }
 
 /*Nav text */
@@ -107,6 +112,9 @@ ul li ul {
   left: 0;
   display: none;
 }
+nav .dropdown ul li {
+  margin-bottom: 8px; /* Adjust this value for the desired spacing */
+}
 
 /*Modifies the drop down appearance*/
 ul li:hover > ul,
@@ -116,10 +124,11 @@ ul li ul:hover {
   opacity: 1;
   display: block;
   text-align: right;
-  top: 60px; /* Adjust this value to position the dropdown below the navigation bar */
-  background-color: rgb(139, 135, 135);
-  width: auto;
+  top: 100%; /* Adjust this value to position the dropdown below the navigation bar */
+  background-color: rgba(11, 11, 11, 0.345);
+  width: relative;
   z-index: 1000;
+  width: 125px;
 }
 
 ul li ul li {

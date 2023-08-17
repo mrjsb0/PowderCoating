@@ -1,8 +1,8 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import mediaBlasting from "../images/mediaBlasting.png"
-import mountBalance from "../images/mountBalance.png"
+import mediaBlasting from "../images/thumbs/mediaBlasting.png"
+import mountBalance from "../images/thumbs/mountBalance.png"
 
 export default () => (
   <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false} style={{ position: "relative", top: "20px"}}>

@@ -10,7 +10,7 @@ export default function Layout({ children}) {
           {children}
         </div>
         <footer>
-            <p>Copyright 2023 Joseph Brooks</p>
+            <p>JB Coatings LLC</p>
         </footer>
     </div>
   )
